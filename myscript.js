@@ -1,16 +1,14 @@
 var todoCtrl = function($scope) {
-	$scope.tasks = [];
-	$scope.addTask = function() {
-		$scope.tasks.push({body:$scope.taskText, done:false});
-		$scope.taskText ='';
-	}
-    $scope.deleteTask = function() {
-    	var oldTasks = $scope.tasks;
-    	$scope.tasks = [];
-    	angular.faEach(oldTasks,function(task){
-    		if(!task.done) $scope.tasks.push(task){
-    			if(!task.done) $scope.tasks.push(task);
-    		});
-    	}
-    }
-
+  $scope.tasks = [];
+  $scope.addTask = function() {
+  	$scope.tasks.push({body:$scope.taskText, done:false});
+  	$scope.taskText = '';
+  }
+  $scope.deleteTask = function() {
+    var oldTasks = $scope.tasks;
+    $scope.tasks = [];
+    angular.forEach(oldTasks, function(task){
+      if (!task.done) $scope.tasks.push(task);
+    });
+  }
+}
