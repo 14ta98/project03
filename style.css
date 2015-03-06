@@ -41,3 +41,7 @@ h1 {
  ul {
       list-style: none;
     }
+
+.ng-scope {
+	text-align: center;
+}
