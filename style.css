@@ -1,0 +1,43 @@
+body {
+	font-family: fontopoNIKUKYU;
+	background-image: url(images/jungle.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+#wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+header {
+	background-image: url("images/banna.png");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 844px;
+}
+
+h1 {
+	text-align: center;
+    height: 120px;
+    font-size: 70px;
+    background-size: 52px;
+    background-image: url("images/gorilla.png");
+    background-repeat: no-repeat;
+    background-position: 60px;
+}
+
+
+.done-true {
+     color: blue;
+     text-decoration: line-through;
+    }
+    
+
+ ul {
+      list-style: none;
+    }
