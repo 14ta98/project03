@@ -45,3 +45,19 @@ h1 {
 .ng-scope {
 	text-align: center;
 }
+
+
+button {
+   border-radius: 10px;        
+    -webkit-border-radius: 10px;    
+    -moz-border-radius: 10px;  
+    background-color:#fff
+
+}
+
+input {
+    border-radius: 10px;        
+    -webkit-border-radius: 10px;    
+    -moz-border-radius: 10px;  
+    background-color:#fff
+}
