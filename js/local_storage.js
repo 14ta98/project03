@@ -22,7 +22,7 @@ $(loaded);
 function loaded() {
   showText();
   // ボタンをクリックしたときに実行するイベントを設定する
-  $("#todoCtrl").click(
+  $(".todoCtrl").click(
     // コールバックとしてメソッドを引数にわたす
     function() {
       saveText();
@@ -33,7 +33,7 @@ function loaded() {
 // 入力された内容をローカルストレージに保存する
 function saveText() {
   // 時刻をキーにして入力されたテキストを保存する
-  var text = $("#taskText");
+  var text = $(".taskText");
   var time = new Date();
   localStorage.setItem(time, text.val());
   // テキストボックスを空にする
@@ -43,7 +43,7 @@ function saveText() {
 // ローカルストレージに保存した値を再描画する
 function showText() {
   // すでにある要素を削除する
-  var list = $("#list")
+  var list = $(".task in tasks")
   list.children().remove();
   // ローカルストレージに保存された値すべてを要素に追加する
   var key, value, html = [];

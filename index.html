@@ -20,12 +20,10 @@
   <!--audio-->
   <audio id="sound-file" preload="auto">
 	<source src="audio/gorilla.mp3" type="audio/mp3">
-	<source src="audio/gorilla2.mp3" type="audio/mp3">
-	<source src="audio/golilla.wav" type="audio/wav">
 	<source src="audio/golilla2.wav" type="audio/wav">
 </audio>
   <div ng-controller="todoCtrl">
-  <p><button onclick="sound()" ng-click="deleteTask()">ウホ</button></p>
+  <button onclick="sound()" ng-click="deleteTask()">ウホ</button>
   <ul>
     <li ng-repeat="task in tasks">
     <input type="checkbox" ng-model="task.done">
