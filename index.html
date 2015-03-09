@@ -17,8 +17,15 @@
   <h1>ごりらおしごとかんり</h1>
   </header>
   <div id="container">
+  <!--audio-->
+  <audio id="sound-file" preload="auto">
+	<source src="audio/gorilla.mp3" type="audio/mp3">
+	<source src="audio/gorilla2.mp3" type="audio/mp3">
+	<source src="audio/golilla.wav" type="audio/wav">
+	<source src="audio/golilla2.wav" type="audio/wav">
+</audio>
   <div ng-controller="todoCtrl">
-  <p><button ng-click="deleteTask()">ウホ</button></p>
+  <p><button onclick="sound()" ng-click="deleteTask()">ウホ</button></p>
   <ul>
     <li ng-repeat="task in tasks">
     <input type="checkbox" ng-model="task.done">
@@ -27,7 +34,7 @@
   </ul>
   <form ng-submit="addTask()">
     <input type="text" ng-model="taskText">
-    <input type="submit" value="ウホウホ">
+    <input onclick="sound()" type="submit" value="ウホウホ">
   </form>
   </div><!--todoCtrl-->
   </div><!--wrapper-->

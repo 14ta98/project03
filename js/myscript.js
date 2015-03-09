@@ -1,7 +1,7 @@
 var todoCtrl = function($scope) {
   $scope.tasks = [];
   $scope.addTask = function() {
-  	$scope.tasks.push({body:$scope.taskText, done:false});
+  	$scope.tasks.unshift({body:$scope.taskText, done:false});
   	$scope.taskText = '';
   }
   $scope.deleteTask = function() {
