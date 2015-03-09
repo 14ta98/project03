@@ -1,6 +1,5 @@
 Angular.jsを用いたTo Do List。
-
-
+ボタンに鳴き声を追加してポップな作品にした。
 
 ■HTML
 ・meta情報を記述。SEO対策を施した。
@@ -31,13 +30,17 @@ CSSの優先度を記述。
 ■JS
 ・local_storage.jsで投稿データをローカルストレージに保存。
 ・myscript.jsにscope.tasks.unshiftを記述。新しい投稿ほど上に表示するように設定。
-・
-
-■疑問点
+・sounds.jsにgetElementByIを記述。soundfileを流した。
 
 
 
-■その他
-Gitの環境設定に苦戦した。転んだ所を
-をhttp://qiita.com/14ta98
-に記述。
+■全体
+・project03フォルダ内をaudio,font,imagesなどフォルダ分け、整理。
+
+
+
+■疑問
+・ウホ、ウホウホボタンそれぞれに違う音源を記述するには？
+・ローカルストレージに実際に保存されているのか？
+・background-imageをbody,header,h1に記述していいのか？
+・新着投稿を追加するとbackground-imageが重なる現象になってしまう。改善点は？
