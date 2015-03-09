@@ -23,7 +23,7 @@
 	<source src="audio/golilla2.wav" type="audio/wav">
 </audio>
   <div ng-controller="todoCtrl">
-  <button onclick="sound()" ng-click="deleteTask()">ウホ</button>
+  <button onclick="sound()" ng-click="deleteTask()" maxlength="20">ウホ</button>
   <ul>
     <li ng-repeat="task in tasks">
     <input type="checkbox" ng-model="task.done">
@@ -31,12 +31,10 @@
     </li>
   </ul>
   <form ng-submit="addTask()">
-    <input type="text" ng-model="taskText">
+    <input type="text" ng-model="taskText" maxlength="20">
     <input onclick="sound()" type="submit" value="ウホウホ">
   </form>
   </div><!--todoCtrl-->
   </div><!--wrapper-->
-<div id="footer">
-</div><!--footer-->
 </body>
 </html>
